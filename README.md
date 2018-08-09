@@ -9,7 +9,7 @@
 
 ```
 dependencies {
-      compile 'com.github.kolyall:clockview:1.0.3'
+      compile 'com.github.kolyall:library_view_clock:1.0.4'
 }
 ```
 Usage:
