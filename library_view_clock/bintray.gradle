@@ -1,0 +1,34 @@
+ext {
+    def propertiesFile = file('properties/version/version.properties')
+    def appVersionName = "1.0";
+    if (propertiesFile.canRead()) {
+        Properties properties = new Properties()
+        properties.load(new FileInputStream(propertiesFile))
+        appVersionName = String.valueOf(properties['VERSION_NAME']);
+    } else {
+        throw new Exception("Could not read properties/version/version.properties!")
+    }
+
+
+    bintrayRepo = 'maven'//name of Repo on https://bintray.com/nickunuchek
+    bintrayName = 'clockview'//name of project on https://bintray.com/nickunuchek/maven
+
+    publishedGroupId = 'com.github.kolyall'//only this
+    artifact = 'library_view_clock'//should be the same as module name
+    libraryVersion = appVersionName
+
+    libraryName = 'ClockView'
+
+    libraryDescription = 'A wrapper for ClockView on Android'
+
+    siteUrl = 'https://github.com/Kolyall/ClockView'
+    gitUrl = 'https://github.com/Kolyall/ClockView.git'
+
+    developerId = 'nickunuchek'
+    developerName = 'Nick Unuchek'
+    developerEmail = 'kolyall@tut.by'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}

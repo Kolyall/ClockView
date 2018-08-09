@@ -1,7 +1,5 @@
 apply plugin: 'com.android.application'
-
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-android-extensions'
 
 android {
@@ -22,9 +20,12 @@ android {
     }
 }
 
+repositories { maven { url "https://dl.bintray.com/nickunuchek/maven" } }
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation project(":library_view_clock")
+//    implementation project(":library_view_clock")
+    implementation 'com.github.kolyall:library_view_clock:1.0.4'
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'com.android.support:appcompat-v7:28.0.0-rc01'
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
