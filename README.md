@@ -5,7 +5,7 @@
 <a href='https://bintray.com/nickunuchek/maven/clockview/1.0.3/link'><img src='https://api.bintray.com/packages/nickunuchek/maven/clockview/images/download.svg?version=1.0.3'></a>
 
 
-<img src='https://github.com/Kolyall/GlowDecorator/blob/master/github/screenshot23.png' width="216" height="384">
+<img src='https://github.com/Kolyall/ClockView/blob/master/github/Screenshot_20180809_173829.png' width="216" height="384">
 
 ```
 dependencies {
