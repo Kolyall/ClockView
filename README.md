@@ -2,14 +2,14 @@
 
 <a href='https://bintray.com/nickunuchek/maven/clockview?source=watch' alt='Get automatic notifications about new "clockview" versions'><img src='https://www.bintray.com/docs/images/bintray_badge_color.png'></a>
 
-<a href='https://bintray.com/nickunuchek/maven/clockview/1.0.3/link'><img src='https://api.bintray.com/packages/nickunuchek/maven/clockview/images/download.svg?version=1.0.3'></a>
+<a href='https://bintray.com/nickunuchek/maven/clockview/_latestVersion'><img src='https://api.bintray.com/packages/nickunuchek/maven/clockview/images/download.svg'></a>
 
 
 <img src='https://github.com/Kolyall/ClockView/blob/master/github/Screenshot_20180809_173829.png' width="216" height="384">
 
 ```
 dependencies {
-      compile 'com.github.kolyall:library_view_clock:1.0.4'
+      compile 'com.github.kolyall:library_view_clock:{latestVersion}'
 }
 ```
 Usage:
