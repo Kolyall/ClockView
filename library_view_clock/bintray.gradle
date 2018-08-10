@@ -1,10 +1,12 @@
 ext {
     def propertiesFile = file('properties/version/version.properties')
     def appVersionName = "1.0";
+    def theLibraryDescription = "1.0";
     if (propertiesFile.canRead()) {
         Properties properties = new Properties()
         properties.load(new FileInputStream(propertiesFile))
         appVersionName = String.valueOf(properties['VERSION_NAME']);
+        theLibraryDescription = String.valueOf(properties['LIBRARY_DESCRIPTION']);
     } else {
         throw new Exception("Could not read properties/version/version.properties!")
     }
@@ -19,7 +21,7 @@ ext {
 
     libraryName = 'ClockView'
 
-    libraryDescription = 'A wrapper for ClockView on Android'
+    libraryDescription = theLibraryDescription
 
     siteUrl = 'https://github.com/Kolyall/ClockView'
     gitUrl = 'https://github.com/Kolyall/ClockView.git'
